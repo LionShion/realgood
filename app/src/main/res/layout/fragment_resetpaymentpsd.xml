@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wenjing.yinfutong.widget.MyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    >
+    <!-- reset_payment_psd_      rpp -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/rpp_headline"
+            style="@style/reset_upper_tip"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_payment_psd"
+                android:textSize="@dimen/text_size_20"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tip_six_psd"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/text_size_14"
+                android:layout_marginTop="@dimen/_10dp"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rpp_oldpsd_line"
+            android:layout_below="@+id/rpp_headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/content_bg"
+            >
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_rpp_oldpsd"
+                android:layout_toLeftOf="@+id/rpp_oldpsd_divider"
+                android:hint="@string/old_psd_hint"
+                style="@style/et_payment_psd"
+                />
+
+            <CheckBox
+                android:id="@+id/cb_rpp_forgetpsd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/forgetpsd"
+                android:textColor="@color/obtain_verify_txtcolor"
+                android:drawableLeft="@mipmap/mark_why"
+                android:drawablePadding="@dimen/_5dp"
+                android:button="@null"
+                android:paddingTop="@dimen/_10dp"
+                android:paddingBottom="@dimen/_10dp"
+                android:layout_centerVertical="true"
+                />
+
+            <View
+                android:id="@+id/rpp_oldpsd_divider"
+                android:layout_toLeftOf="@+id/cb_rpp_forgetpsd"
+                style="@style/verify_divider_vertical"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rpp_newpsd_line"
+            android:layout_below="@+id/rpp_oldpsd_line"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/content_bg"
+            >
+            <RelativeLayout
+                android:id="@+id/rpp_first_newpsd_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_rpp_first_newpsd"
+                    android:hint="@string/new_psd_hint"
+                    style="@style/et_payment_psd"
+                    />
+
+                <View
+                    android:layout_below="@+id/et_rpp_first_newpsd"
+                    style="@style/nomargin_divide_view"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rpp_again_newpsd_line"
+                android:layout_below="@+id/rpp_first_newpsd_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_rpp_again_newpsd"
+                    android:hint="@string/confirm_new_psd_hint"
+                    style="@style/et_payment_psd"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_rpp_commit"
+            android:layout_below="@+id/rpp_newpsd_line"
+            android:text="@string/commit"
+            style="@style/bottom_tv_btn"
+            android:background="@drawable/gray_btn_normal"
+            />
+    </RelativeLayout>
+</com.wenjing.yinfutong.widget.MyScrollView>

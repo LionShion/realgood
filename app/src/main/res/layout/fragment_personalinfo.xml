@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/title_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/content_bg"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/nickname_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_line_height"
+            >
+            <TextView
+                android:text="@string/nickname"
+                style="@style/content_line_field"
+                />
+            <ImageView
+                android:id="@+id/nickname_arrow"
+                style="@style/hasdownline_arrow"/>
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_toLeftOf="@+id/nickname_arrow"
+               style="@style/content_line_right_value"
+                />
+
+            <View
+               style="@style/nomargin_divide_view"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tied_email_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_line_height"
+            >
+            <TextView
+                android:text="@string/tied_email"
+                style="@style/content_line_field"
+                />
+            <ImageView
+                android:id="@+id/tied_email_arrow"
+                style="@style/hasdownline_arrow"/>
+
+            <TextView
+                android:id="@+id/tv_tied_email"
+                android:layout_toLeftOf="@+id/tied_email_arrow"
+                android:layout_marginRight="@dimen/right_arrow_marginRight"
+                style="@style/content_line_right_value"
+
+                />
+            <View
+                style="@style/nomargin_divide_view"
+                android:layout_alignParentBottom="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tied_phone_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_line_height"
+            >
+            <TextView
+                android:text="@string/tied_phonenum"
+                style="@style/content_line_field"
+                />
+            <TextView
+                android:id="@+id/tv_tied_phonenum"
+                android:layout_alignParentRight="true"
+                style="@style/content_line_right_value"
+                android:layout_marginRight="@dimen/_30dp"
+                />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

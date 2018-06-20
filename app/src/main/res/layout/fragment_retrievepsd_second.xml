@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    >
+
+    <LinearLayout
+        android:id="@+id/rp_psd_headline"
+        style="@style/reset_upper_tip"
+        >
+        <TextView
+            android:id="@+id/tip_retrieve_psd_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tip_new_psd"
+            android:textSize="@dimen/text_size_20"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/tip_psd_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tip_psd_setting"
+            android:textSize="@dimen/text_size_14"
+            android:layout_marginTop="@dimen/_10dp"
+            />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/frame_rp_psd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/content_bg"
+        android:layout_below="@+id/rp_psd_headline"
+        >
+
+        <!--phone or email     poe-->
+        <RelativeLayout
+            android:id="@+id/rp_psd_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_rp_psd"
+                android:hint="@string/input_login_psd_hint"
+                style="@style/et_login_psd"
+                />
+            <View
+                android:layout_below="@+id/et_rp_psd"
+                style="@style/nomargin_divide_view"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rp_psd_confirm_line"
+            android:layout_below="@+id/rp_psd_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_rp_psd_confirm"
+                android:hint="@string/confirm_login_psd_hint"
+                style="@style/et_login_psd"
+                />
+
+            <View
+                android:layout_below="@+id/et_rp_psd_confirm"
+                style="@style/nomargin_divide_view"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_rp_commit"
+        android:layout_below="@+id/frame_rp_psd"
+        android:text="@string/commit"
+        style="@style/bottom_tv_btn"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    >
+
+    <!--申请人信息   栏-->
+    <LinearLayout
+        android:layout_marginTop="@dimen/title_margin"
+        android:id="@+id/proposer_info_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_20dp"
+        android:orientation="vertical"
+        android:background="@color/content_bg"
+        >
+        <!--申请人  栏-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tip_proposer"
+                android:layout_width="@dimen/open_merchant_tip_width"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/proposer"
+                android:textSize="@dimen/text_size_14"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_proposer_name"
+                android:layout_toRightOf="@+id/tip_proposer"
+                android:hint="@string/proposer_name_hint"
+                style="@style/et_name"
+                />
+
+            <View
+                android:layout_below="@+id/et_proposer_name"
+                style="@style/nomargin_divide_view"/>
+
+        </RelativeLayout>
+
+        <!--联系方式  栏-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tip_contactway"
+                android:layout_width="@dimen/open_merchant_tip_width"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/contact_way"
+                android:textSize="@dimen/text_size_14"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_contactway"
+                android:layout_toRightOf="@+id/tip_contactway"
+                android:hint="@string/phone_or_fixed_hint"
+                style="@style/et_phone_style"
+                />
+
+            <View
+                android:layout_below="@+id/et_contactway"
+                style="@style/nomargin_divide_view"/>
+
+        </RelativeLayout>
+
+        <!--店铺名称  栏-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tip_shopname"
+                android:layout_width="@dimen/open_merchant_tip_width"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/shop_name"
+                android:textSize="@dimen/text_size_14"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_shopname"
+                android:layout_toRightOf="@+id/tip_shopname"
+                android:hint="@string/shop_name_hint"
+                style="@style/et_shopname"
+                />
+
+            <View
+                android:layout_below="@+id/et_shopname"
+                style="@style/nomargin_divide_view"/>
+
+        </RelativeLayout>
+     </LinearLayout>
+
+    <!-- 店铺信息   栏-->
+    <LinearLayout
+        android:id="@+id/shop_info_line"
+        android:layout_below="@+id/proposer_info_line"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_20dp"
+        android:orientation="vertical"
+        android:background="@color/content_bg"
+        >
+        <!--店铺地址  栏-->
+        <RelativeLayout
+            android:id="@+id/shop_proandcity_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tip_shop_address"
+                android:layout_width="@dimen/open_merchant_tip_width"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/shop_address"
+                android:textSize="@dimen/text_size_14"
+                />
+
+            <TextView
+                android:id="@+id/tv_shop_proandcity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tip_shop_address"
+                android:hint="@string/province_and_city_hint"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/_20dp"
+                android:paddingTop="@dimen/_20dp"
+                android:paddingBottom="@dimen/_20dp"
+                />
+
+            <ImageView
+                style="@style/arrow_right_style"
+                android:layout_marginRight="@dimen/_20dp"
+                 />
+            <View
+                android:layout_below="@+id/tv_shop_proandcity"
+                style="@style/nomargin_divide_view"/>
+
+        </RelativeLayout>
+
+        <!--详细地址输入  栏-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_detailaddress"
+                android:hint="@string/detail_address_hint"
+                style="@style/et_detailaddress"
+                android:paddingLeft="@dimen/et_detail_address_paddingL"
+                />
+
+            <View
+                android:layout_below="@+id/et_detailaddress"
+                style="@style/nomargin_divide_view"/>
+
+        </RelativeLayout>
+
+        <!--店铺照片上传  栏-->
+        <RelativeLayout
+            android:id="@+id/shop_shopphoto_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tip_shop_photo"
+                android:layout_width="@dimen/open_merchant_tip_width"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/shop_phone"
+                android:textSize="@dimen/text_size_14"
+                />
+
+            <TextView
+                android:id="@+id/tv_shop_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tip_shop_photo"
+                android:hint="@string/upload_shop_photo_hint"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/_20dp"
+                android:paddingTop="@dimen/_20dp"
+                android:paddingBottom="@dimen/_20dp"
+                />
+
+            <ImageView
+                style="@style/arrow_right_style"
+                android:layout_marginRight="@dimen/_20dp"
+                />
+            <View
+                android:layout_below="@+id/tv_shop_photo"
+                style="@style/nomargin_divide_view"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_commit_application"
+        android:layout_below="@+id/shop_info_line"
+        android:text="@string/commit_application"
+        style="@style/bottom_tv_btn"
+        />
+
+    <TextView
+        android:layout_below="@+id/tv_commit_application"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_application_infomation"
+        android:textColor="@color/hint_color"
+        android:textSize="@dimen/text_size_12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10dp"
+        />
+
+
+
+
+
+</RelativeLayout>

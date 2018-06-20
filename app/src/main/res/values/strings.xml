@@ -1,0 +1,430 @@
+<resources>
+    <string name="app_name">Silver Pay</string>
+    <string name="loading">正在加载中...</string>
+    <string name="safety_ensure">web</string>
+    <string name="home">首页</string>
+    <string name="mine">我的</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="button_ok">OK</string>
+    <string name="viewfinderview_status_text1">将二维码放入框内，即可自动扫描</string>
+    <string name="payment_code">收款码</string>
+    <string name="richScan">扫一扫</string>
+    <string name="balance">余额</string>
+    <string name="my_two_dimensional_code">我的二维码</string>
+    <string name="pay_to">付款给</string>
+    <string name="pay_money">付款金额</string>
+    <string name="money_symbol">＄</string>
+    <string name="money_symbol_rmb">￥</string>
+    <string name="input_money">输入金额</string>
+    <string name="confirm_payment">确认付款</string>
+    <string name="order_info">订单信息</string>
+    <string name="pay_way">付款方式</string>
+    <string name="order_money">订单金额</string>
+    <string name="privilege_money">优惠金额</string>
+    <string name="payment">付款</string>
+    <string name="at_once_payment">立即付款</string>
+
+    <string name="psd_hint">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="tip_forget_psd">忘记密码?</string>
+    <string name="forget_psd">忘记密码</string>
+    <string name="user_register">注册用户</string>
+    <string name="go_into_experience">进入体验</string>
+
+    <string name="phone_empty">手机号不能为空</string>
+    <string name="psd_empty">密码不能为空</string>
+    <string name="register">注册</string>
+    <string name="forgetpsd">忘记密码</string>
+    <string name="retrieve_psd">找回密码</string>
+    <string name="verify_identity">身份验证</string>
+    <string name="next_step">下一步</string>
+    <string name="tip_psd_setting">请设置6-20位数字和字母密码</string>
+    <string name="first_input_psd">请输入密码</string>
+    <string name="psd_again_hint">请再次输入密码</string>
+    <string name="confirm_modify">确认修改</string>
+    <string name="tip_new_psd">输入新登录密码</string>
+    <string name="tip_new_payment_psd">输入新支付密码</string>
+    <string name="payment_psd_hint">输入支付密码</string>
+    <string name="confirm_payment_psd_hint">确认支付密码</string>
+    <string name="tip_payment_psd">输入支付密码</string>
+
+    <!--MineFragment-->
+    <string name="head_portrait">头像</string>
+    <string name="not_verify_name">点击登录</string>
+    <string name="not_verify_id">体验更多功能</string>
+    <string name="recharge">充值</string>
+    <string name="balance_RMB">余额(元)</string>
+    <string name="balance_dollar">余额($)</string>
+
+    <string name="bill">账单</string>
+    <string name="merchant_services">商家服务</string>
+    <string name="bank_card">银行卡</string>
+    <string name="not_tied_card">未绑卡</string>
+    <string name="safety_management">安全管理</string>
+    <string name="customer_service">客户服务</string>
+    <string name="switch_language">切换语言</string>
+
+    <string name="nothing">无</string>
+    <string name="personal_info">个人信息</string>
+
+    <string name="nickname">昵称</string>
+    <string name="tied_phonenum">绑定手机号</string>
+    <string name="tied_email">绑定邮箱</string>
+    <string name="real_name_identify">实名认证</string>
+    <string name="aleady_identify">已实名</string>
+    <string name="tip_nickname_input">请输入英文昵称,限4-16个字符</string>
+    <string name="save">保存</string>
+    <string name="commit">提交</string>
+    <string name="nickname_empty">昵称不能为空</string>
+
+    <string name="success_tie_email">成功绑定邮箱</string>
+    <string name="success_modify_nickname">成功修改昵称</string>
+    <string name="fail_modify">修改失败</string>
+
+
+    <string name="choose_pay">选择支付方式</string>
+    <string name="account_balance">账户余额</string>
+    <string name="account_balance_dollar">账户余额 ($)</string>
+
+    <string name="service_protocol">服务协议</string>
+    <string name="tip_yft_protocol">注册账号即代表您同意并遵守银付通</string>
+    <string name="confirm_psd">确认密码</string>
+    <string name="tip_psd_6to20">6-20位数字和字母密码</string>
+    <string name="set_psd">设置密码</string>
+    <string name="country_region">国家/地区</string>
+    <string name="verifycode_hint">请输入验证码</string>
+    <string name="phonenum">手机号</string>
+    <string name="phone_hint">请输入手机号</string>
+    <string name="phone_verifycode_hint">请输入短信验证码</string>
+    <string name="email_hint">请输入邮箱地址</string>
+    <string name="email_verifycode_hint">请输入邮箱验证码</string>
+    <string name="obtain_verifycode">获取验证码</string>
+    <string name="verifycode_empty">验证码不能为空</string>
+    <string name="email_empty">邮箱地址不能为空</string>
+    <string name="phone_or_email">手机号/邮箱</string>
+    <string name="verifycode">验证码</string>
+    <string name="poe_empty">手机号或者邮箱不能为空</string>
+    <string name="psd_confirm_empty">确认密码不能为空</string>
+    <string name="psd_not_equal">密码不一致,请重新输入</string>
+    <string name="modify_success">修改成功</string>
+
+    <string-array name="languages">
+        <item>@string/Chinese</item>
+        <item>@string/English</item>
+        <item>@string/Cambodia</item>
+    </string-array>
+
+    <string name="Chinese">中文</string>
+    <string name="English">English</string>
+    <string name="Cambodia">កម្ពុជា</string>
+    <string name="hot_recommend">热门推荐</string>
+    <string name="more">更多</string>
+    <string name="permissions_tips">为了更好的给你提供服务需要手机权限，请前往设置—管理权限中打开</string>
+
+    <string name="today_income_RMB">今日收入(元)</string>
+    <string name="today_income_dollar">今日收入($)</string>
+    <string name="default_balance_num">0.00</string>
+    <string name="default_num">0</string>
+    <string name="today_trade">今日交易</string>
+    <string name="today_trade_unit">笔</string>
+    <string name="today_customer">今日顾客</string>
+    <string name="today_customer_unit">人</string>
+    <string name="RMB">元</string>
+    <string name="mine_bill">我的账单</string>
+    <string name="recent_one_trade">最新一笔</string>
+    <string name="account_check">对账</string>
+    <string name="voice_prompt">语音提醒</string>
+    <string name="commission">佣金</string>
+    <string name="expect_more">期待更多</string>
+    <string name="tip_voice_prompt">即时语音播报用户付款信息</string>
+
+    <string name="region">地区</string>
+
+    <string name="language_selection">语言选择</string>
+    <string name="recharge_money">充值金额</string>
+    <string name="pay_money_hint">请输入付款金额</string>
+    <string name="cash_out">提现</string>
+
+    <string name="tip_login_error">登录密码错误,请重新输入</string>
+    <string name="cancel">取消</string>
+    <string name="retry">重试</string>
+    <string name="reset_login_psd">重置登录密码</string>
+    <string name="reset_payment_psd">重置支付密码</string>
+    <string name="exit">退出</string>
+    <string name="tip_confirm_exit">确认要退出吗?</string>
+    <string name="confirm">确定</string>
+
+    
+    <string name="regain">重新获取</string>
+    <string name="input_login_psd_hint">请输入登录密码</string>
+    <string name="confirm_login_psd_hint">确认登录密码</string>
+    <string name="old_psd_empty">旧密码不能为空</string>
+    <string name="new_psd_empty">新密码不能为空</string>
+    <string name="again_new_psd_empty">确认新密码不能为空</string>
+    <string name="newpsd_not_equal">新密码不一致,请重新输入</string>
+    <string name="old_psd_hint">请输入旧密码</string>
+    <string name="new_psd_hint">请输入新密码</string>
+    <string name="confirm_new_psd_hint">请确认新密码</string>
+    <string name="tip_six_psd">请输入六位数字密码</string>
+
+    <string name="proposer">申请人</string>
+    <string name="proposer_name_hint">请填写申请人姓名</string>
+    <string name="contact_way">联系方式</string>
+    <string name="phone_or_fixed_hint">请填写手机/固定电话</string>
+    <string name="shop_name">店铺名称</string>
+    <string name="shop_name_hint">请填写店铺名称</string>
+    <string name="shop_address">店铺地址</string>
+    <string name="province_and_city_hint">请选择省份、城市</string>
+    <string name="detail_address_hint">请输入详细地址,如街道、楼牌号等</string>
+    <string name="shop_photo">店铺照片</string>
+    <string name="upload_shop_photo_hint">请上传店铺门头照片</string>
+    <string name="commit_application">提交申请</string>
+    <string name="tip_application_infomation">申请信息只能填写一份,请如实填写,我们将会在24小时内联系你,请注意接听来电。</string>
+
+    <string name="sms_verify_success">短信验证成功</string>
+    <string name="login_success">登录成功</string>
+    <string name="tip_select_your_country_or_region">请选择您的国家或者地区</string>
+    <string name="register_success">恭喜您注册成功!</string>
+    <string name="register_fail">注册失败</string>
+
+    <string name="scan_pays_me">扫一扫，向我付款</string>
+    <string name="save_image">保存图片</string>
+    <string name="collection_record">收款记录</string>
+    <string name="merchant_balance">商家余额</string>
+    <string name="payment_money">付款金额</string>
+    <string name="actually_pay_rmb">实际支付人民币</string>
+    <string name="need_to_pay">需付款</string>
+    <string name="input_pay_psd">输入支付密码</string>
+    <string name="platform_announcement">平台公告</string>
+    <string name="trade_information">交易信息</string>
+    <string name="news_center">消息中心</string>
+    <string name="save_image_success">图片已保存至系统相册</string>
+    <string name="fail">失败</string>
+    <string name="merchant_services_tips">此功能仅限商家用户，继续使用，请开通商家服务。</string>
+    <string name="history_bill">历史账单</string>
+    <string name="daily_bills">每日账单</string>
+    <string name="monthly_bills">每月账单</string>
+    <string name="screen">筛选</string>
+    <string name="string_in_memory">String in memory</string>
+    <string name="bill_detalis">账单详情</string>
+    <string name="trade_success">交易成功</string>
+    <string name="trade_time">交易时间</string>
+    <string name="order_num">订单号</string>
+    <string name="all">全部</string>
+    <string name="income">收入</string>
+    <string name="out">支出</string>
+    <string name="personal">个人</string>
+    <string name="merchant">商家</string>
+    <string name="choose_trade_type">选择交易类型</string>
+    <string name="finish">完成</string>
+
+    <string name="commited">已提交</string>
+    <string name="wait_dealwith">等待处理</string>
+    <string name="tip_commited">已提交申请,我们会尽快审核并与您联系</string>
+    <string name="tip_no_tiedbankcard">您尚未绑定银行卡</string>
+    <string name="add_bank_card">添加银行卡</string>
+    <string name="unbind">解绑</string>
+    <string name="tie_bankcard">绑定银行卡</string>
+    <string name="name">姓名</string>
+    <string name="name_hint">请输入姓名</string>
+    <string name="ID_number">身份证号</string>
+    <string name="ID_number_hint">请输入身份证号</string>
+    <string name="deposit_bank">开户银行</string>
+    <string name="select_depositbank_hint">请选择开户银行</string>
+    <string name="bankcard_num">银行卡号</string>
+    <string name="bankcard_num_hint">请输入银行卡号</string>
+    <string name="reserved_phonenum_hint">请输入银行预留手机号码</string>
+    <string name="tip_has_read_and_agree">我已经阅读并同意</string>
+    <string name="protocol_yft_realname_tiedcard">银付通实名绑卡协议</string>
+    <string name="select_depositbank">选择开户银行</string>
+    <string name="union_pay_card">银联卡</string>
+    <string name="not_union_pay_card">非银联卡</string>
+    <string name="this_month">本月</string>
+    <string name="money_dollars">金额($)</string>
+    <string name="count">笔数</string>
+    <string name="success_logout">成功退出</string>
+    <string name="sum_to">共计</string>
+    <string name="untapped">尚未开发</string>
+    <string name="choose_bank_card">选择银行卡</string>
+    <string name="actual_payment">实际付款</string>
+    <string name="today_bill">今日账单</string>
+    <string name="current_exchange_rate">当前汇率 1美元=6.3元人民币</string>
+
+
+
+    <string name="succ_remove_bankcard">成功移除银行卡</string>
+    <string name="fail_remove">移除失败</string>
+    <string name="add_bankcard">添加银行卡</string>
+    <string name="tip_confirm_unbind_bankcard">确认要解绑该银行卡吗</string>
+    <string name="cash_out_money">提现金额</string>
+    <string name="cash_out_tip">请输入提现金额</string>
+    <string name="cash_out_all">全部提现</string>
+    <string name="confirm_cash_out">确认提现</string>
+    <string name="succ_retrievepsd">成功找回密码</string>
+    <string name="succ_resetpsd">成功重置密码</string>
+    <string name="select_region">选择地区</string>
+    <string name="verifycode_sent">验证码已发送</string>
+    <string name="reserved_phone_empty">预留手机号不能为空</string>
+    <string name="resend">重新发送</string>
+    <string name="tip_login_timeout">连接已超时，请重新登录</string>
+    <string name="succ_bind_bankcard">成功绑定银行卡</string>
+    <string name="set">设置</string>
+    <string name="set_payment_psd">设置支付密码</string>
+    <string name="succ_set_paymentpsd">支付密码设置成功</string>
+    <string name="set_trade_psd">设置交易密码</string>
+    <string name="to_set">去设置</string>
+    <string name="no_set_trade_psd">没有设置交易密码</string>
+    <string name="format_no_phone">手机号格式不符合</string>
+    <string name="format_no_email">邮箱格式不符合</string>
+    <string name="format_no_idno">身份证号格式不符合</string>
+    <string name="format_no_bankno">银行卡卡号格式不符合</string>
+    <string name="format_no_psd_login">登录密码格式不符合</string>
+    <string name="format_no_psd_payment">支付密码格式不符合</string>
+
+
+    <string name="no_bind_card">未绑卡</string>
+
+    <string name="tip_customer_hotline">客服热线: 9:00-18:00 (工作日)</string>
+    <string name="customer_hotline">400-872-8841</string>
+    <string name="common_problem">常见问题</string>
+    <string name="data_no_empity">数据不能为空</string>
+    <string name="aleady_no_data">已经到底啦</string>
+    <string name="recharge_succ_tips">操作成功，正在为您处理</string>
+    <string name="recharge_succ">充值成功</string>
+    <string name="read_camera_permission">\"读取相机权限申请：\\n我们需要您开启相机权限(in activity with listener)\"</string>
+    <string name="discount_cash_back">折扣返现</string>
+    <string name="company_name">商家名称</string>
+    <string name="wechat">微信</string>
+    <string name="alipay">支付宝</string>
+    <string name="cash_out_to">提现至</string>
+    <string name="pritical_money">实际到账</string>
+    <string name="service_charge">手续费</string>
+    <string name="rate">汇率</string>
+    <string name="waiting_process">等待处理</string>
+    <string name="not_sufficient_fund">余额不足</string>
+    <string name="vip_service">专享服务</string>
+    <string name="do_not_cash_out">个人提现功能暂未开放</string>
+    <string name="shop_phone">店铺照片</string>
+    <string name="pay_succ">支付成功</string>
+    <string name="choose_pay_way">选择支付方式</string>
+    <string name="tautology">请确认后重试</string>
+    <string name="set_no">未设置</string>
+    <string name="refuse_open_merchant">抱歉，当前用户暂不满足开通商家的资格， 重新申请请联系客服。</string>
+    <string name="fail_to_apply">申请失败</string>
+    <string name="email_no">可用于接收账单数据等</string>
+    <string name="pay">支付</string>
+    <string name="gathering">收款</string>
+    <string name="input_gathering_money">请输入收款金额</string>
+    <string name="Chinese_Mainland">中国大陆</string>
+    <string name="re_enter">重新输入</string>
+    <string name="our_pay">Silver Pay</string>
+    <string name="tip_right_money">请输入正确的金额</string>
+    <string name="once_out_tip">再次点击退出应用</string>
+
+    <string name="upload_already">已上传</string>
+    <string name="payer">(付款人)</string>
+    <string name="pay_inputerror_msg_front">支付密码不正确，你还可以再输入</string>
+    <string name="times">次</string>
+    <string name="pay_locked_msg">支付密码错误次数过多，已被锁定，请重置密码解锁</string>
+    
+    <string name="tip_expect_more">更多功能正在开发中</string>
+
+    <string name="please_wait">请耐心等待</string>
+    <string name="cancel_queue">取消排队</string>
+    <string name="to_recharge">待充值</string>
+    <string name="tip_cancelqueue">很快就能排到您了, 真的不打算再等等吗?</string>
+    <string name="quit">离开</string>
+    <string name="wait_again">再等等</string>
+    <string name="artificial_recharge">人工充值</string>
+    <string name="distributor">分销商</string>
+
+    <string name="order_result">订单结果</string>
+    <!--语音提示-->
+    <string name="succ_recharge">成功充值</string>
+    <string name="fail_recharge">充值失败</string>
+    <string name="pay_fail">支付失败</string>
+    <string name="succ_withdraw_deposit">成功提现</string>
+    <string name="fail_withdraw_deposit">提现失败</string>
+    <string name="succ_gathering">成功收款</string>
+    <string name="gathering_fail">收款失败</string>
+    <string name="dollar">dollar</string>
+
+    <string name="please_choose_gathering_way">请选择收款方式</string>
+    <string name="album">相册</string>
+    <string name="take_photo">拍照</string>
+
+
+
+
+
+
+    <!-- 请替换成在语音云官网申请的appid -->
+    <string name="app_id">598d726f</string>
+    <string name="example_explain">本示例为讯飞语音Android平台开发者提供语音听写、语法识别、语义理解和语音合成等代码样例，旨在让用户能够依据该示例快速开发出基于语音接口的应用程序。</string>
+    <string name="text_tts_source">在英国人眼中，小猪佩奇是在地地道道讲述英国中产阶级的生活理念。近些年，小猪佩奇对于英国消费市场的影响也是显而易见的。普通口味的果汁、饼干或是一个小书包，只要印上了这个可爱的小猪形象，就不愁销路。很多英国人还喜欢用剧中人物的名字为新出生的宝宝命名，比如乔治、佐伊等。
+
+在 2014 年，英国皇家邮政发行的 12 组动画主题新年邮票中，小猪佩奇就当选其中。按照英国皇家邮政的说法，将这样的动画形象记录在英国人最热衷收藏的邮票上，足以说明小猪佩奇等动画形象带给人们的快乐有多么重要。
+
+小猪佩奇的“亲生父母”其实是三个大男人。三人选择了小猪这种动物作主角，并为她取名佩奇。在英国人看来，这是一个听起来有点聪明、有点酷、还有点辣的名字。如今，全世界的孩子似乎都迷上了小猪佩奇和她的家人、朋友。在孩子们和家长们的眼中，小猪佩奇总是在鼓励小朋友们体验不同的生活，同时又注重表达对亲友的关爱，学会什么是幽默，如何找寻快乐。在英国，很多家庭限制孩子看电视的时间，但对于《小猪佩奇》这部动画片，很多家长们往往网开一面。同时也有家长抱怨，小猪佩奇任性，不够尊重父母，给孩子不好的引导，甚至说孩子模仿佩奇跳泥坑，甚至学猪叫</string>
+    <string name="text_tts_source_en">The success is worth $100</string>
+    <!-- 合成 -->
+    <string-array name="voicer_cloud_entries">
+        <item>小燕—女青、中英、普通话</item>
+        <item>小宇—男青、中英、普通话</item>
+        <item>凯瑟琳—女青、英</item>
+        <item>亨利—男青、英</item>
+        <item>玛丽—女青、英</item>
+        <item>小研—女青、中英、普通话</item>
+        <item>小琪—女青、中英、普通话</item>
+        <item>小峰—男青、中英、普通话</item>
+        <item>小梅—女青、中英、粤语</item>
+        <item>小莉—女青、中英、台湾普通话</item>
+        <item>小蓉—女青、中、四川话</item>
+        <item>小芸—女青、中、东北话</item>
+        <item>小坤—男青、中、河南话</item>
+        <item>小强—男青、中、湖南话</item>
+        <item>小莹—女青、中、陕西话</item>
+        <item>小新—男童、中、普通话</item>
+        <item>楠楠—女童、中、普通话</item>
+        <item>老孙—男老、中、普通话</item>
+    </string-array>
+    <string-array name="voicer_cloud_values">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>catherine</item>
+        <item>henry</item>
+        <item>vimary</item>
+        <item>vixy</item>
+        <item>xiaoqi</item>
+        <item>vixf</item>
+        <item>xiaomei</item>
+        <item>xiaolin</item>
+        <item>xiaorong</item>
+        <item>xiaoqian</item>
+        <item>xiaokun</item>
+        <item>xiaoqiang</item>
+        <item>vixying</item>
+        <item>xiaoxin</item>
+        <item>nannan</item>
+        <item>vils</item>
+    </string-array>
+    <string-array name="stream_entries">
+        <item>通话</item>
+        <item>系统</item>
+        <item>铃声</item>
+        <item>音乐</item>
+        <item>闹铃</item>
+        <item>通知</item>
+    </string-array>
+    <string-array name="stream_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string formatted="false" name="tts_toast_format">缓冲进度为%d%%，播放进度为%d%%</string>
+
+
+</resources>

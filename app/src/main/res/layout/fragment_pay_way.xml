@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+             >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48dp"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/_10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="@dimen/_10dp">
+
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_5dp"
+                    android:background="@mipmap/ic_back_arrow"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/choose_pay"
+                    android:textSize="17sp"/>
+
+            </RelativeLayout>
+
+            <View style="@style/divide_line"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_background"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/_10dp"
+                android:paddingRight="@dimen/_10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="@dimen/_30dp"
+                    android:layout_height="@dimen/_30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_launcher"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_account_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_toRightOf="@id/iv_head"
+                    android:text="@string/balance"
+                    android:textColor="@color/grey_999"
+                    android:textSize="@dimen/text_size_15"/>
+
+                <ImageView
+                    android:id="@+id/iv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_arrows_right"
+                    android:visibility="gone"
+                    android:textColor="@color/grey_999"/>
+
+                <TextView
+                    android:id="@+id/tv_to_recharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_toLeftOf="@id/iv_right"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/recharge"
+                    android:visibility="gone"
+                    android:textColor="@color/grey_999"/>
+
+            </RelativeLayout>
+
+            <View style="@style/divide_line"
+                android:layout_marginLeft="@dimen/_15dp"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+</RelativeLayout>

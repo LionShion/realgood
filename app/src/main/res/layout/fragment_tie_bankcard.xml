@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wenjing.yinfutong.widget.MyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!--tied_bankcard  tb-->
+        <LinearLayout
+            android:layout_marginTop="@dimen/title_margin"
+            android:id="@+id/tb_cardinfo_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/content_bg"
+            android:orientation="vertical"
+            >
+
+            <!--姓名   栏-->
+            <RelativeLayout
+                android:id="@+id/tb_name_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/tb_name_hor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_48dp"
+                    android:paddingLeft="@dimen/mine_line_marginHor"
+                    android:paddingRight="@dimen/mine_line_marginHor"
+                    >
+
+                    <TextView
+                        android:id="@+id/tip_tb_name"
+                        android:layout_width="@dimen/open_merchant_tip_width"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/name"
+                        android:textColor="@color/black"
+                        />
+
+                    <View
+                        android:id="@+id/tb_name_divider"
+                        style="@style/verify_divider_vertical"
+                        android:layout_toRightOf="@+id/tip_tb_name"
+                        />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_tb_name"
+                        style="@style/et_name"
+                        android:layout_toRightOf="@+id/tb_name_divider"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/name_hint"
+                        />
+                </RelativeLayout>
+
+                <View
+                    style="@style/nomargin_divide_view"
+                    android:layout_below="@+id/tb_name_hor"
+                    />
+            </RelativeLayout>
+
+            <!--身份证号   栏-->
+
+            <RelativeLayout
+                android:id="@+id/tb_idnum_hor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48dp"
+                android:paddingLeft="@dimen/mine_line_marginHor"
+                android:paddingRight="@dimen/mine_line_marginHor"
+                >
+
+                <TextView
+                    android:id="@+id/tip_tb_idnum"
+                    android:layout_width="@dimen/open_merchant_tip_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ID_number"
+                    android:textColor="@color/black"
+                    />
+
+                <View
+                    android:id="@+id/tb_idnum_divider"
+                    style="@style/verify_divider_vertical"
+                    android:layout_toRightOf="@+id/tip_tb_idnum"
+                    />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_tb_idnum"
+                    style="@style/et_idnumber_style"
+                    android:layout_toRightOf="@+id/tb_idnum_divider"
+                    android:hint="@string/ID_number_hint"
+                    />
+            </RelativeLayout>
+
+            <View
+                style="@style/nomargin_divide_view"
+                />
+
+
+            <!--开户银行   栏-->
+            <RelativeLayout
+                android:id="@+id/tb_depositbank_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48dp"
+                android:paddingLeft="@dimen/mine_line_marginHor"
+                android:paddingRight="@dimen/mine_line_marginHor"
+                >
+
+                <TextView
+                    android:id="@+id/tip_tb_depositbank"
+                    android:layout_width="@dimen/open_merchant_tip_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/deposit_bank"
+                    android:textColor="@color/black"
+                    />
+
+                <View
+                    android:id="@+id/tb_depositbank_divider"
+                    style="@style/verify_divider_vertical"
+                    android:layout_toRightOf="@+id/tip_tb_depositbank"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_tb_depositbank"
+                    android:layout_toRightOf="@+id/tb_depositbank_divider"
+                    android:hint="@string/select_depositbank_hint"
+                    style="@style/et_material_style"
+                    />
+
+                <ImageView
+                    style="@style/arrow_right_style"
+                    />
+            </RelativeLayout>
+
+            <View
+                style="@style/nomargin_divide_view"
+                android:layout_below="@+id/tb_depositbank_line"
+                />
+
+            <!--银行卡号   栏-->
+            <RelativeLayout
+                android:id="@+id/tb_cardnum_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/tb_cardnum_hor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/mine_line_marginHor"
+                    android:paddingRight="@dimen/mine_line_marginHor"
+                    >
+
+                    <TextView
+                        android:id="@+id/tip_tb_cardnum"
+                        android:layout_width="@dimen/open_merchant_tip_width"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/bankcard_num"
+                        android:textColor="@color/black"
+                        />
+
+                    <View
+                        android:id="@+id/tb_cardnum_divider"
+                        style="@style/verify_divider_vertical"
+                        android:layout_toRightOf="@+id/tip_tb_cardnum"
+                        />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_tb_cardnum"
+                        style="@style/et_bankcardnum_style"
+                        android:layout_toRightOf="@+id/tb_cardnum_divider"
+                        android:hint="@string/bankcard_num_hint"
+                        android:inputType="number"
+                        />
+                </RelativeLayout>
+
+                <View
+                    style="@style/nomargin_divide_view"
+                    android:layout_below="@+id/tb_cardnum_hor"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/tb_verify_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tb_cardinfo_line"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@color/content_bg"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:id="@+id/tb_region_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/content_line_height"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mine_line_marginHor"
+                    android:text="@string/country_region"
+                    />
+
+                <ImageView
+                    android:id="@+id/arrow_tb_region"
+                    style="@style/arrow_right_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/mine_line_marginHor"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_tb_regioncode"
+                    style="@style/region_txt_style"
+                    android:layout_toLeftOf="@+id/arrow_tb_region"
+                    />
+
+                <View
+                    android:id="@+id/tb_region_divider"
+                    style="@style/region_divider_vertical"
+                    android:layout_marginRight="@dimen/_20dp"
+                    android:layout_toLeftOf="@+id/tv_tb_regioncode"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_tb_regionname"
+                    style="@style/region_txt_style"
+                    android:layout_toLeftOf="@+id/tb_region_divider"
+                    />
+
+                <View
+                    style="@style/nomargin_divide_view"
+                    android:layout_alignParentBottom="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tb_reservedphone_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_tb_reservedphone"
+                    style="@style/et_phone_style"
+                    android:hint="@string/reserved_phonenum_hint"
+                    />
+
+                <View
+                    style="@style/nomargin_divide_view"
+                    android:layout_below="@+id/et_tb_reservedphone"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/tb_verifycode_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_tb_verifycode"
+                    style="@style/et_verifycode_style"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_toLeftOf="@+id/tb_verify_divider"
+                    android:hint="@string/phone_verifycode_hint"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_tb_obtain_verifycode"
+                    style="@style/verify_tv_obtaincode"
+                    />
+
+                <View
+                    android:id="@+id/tb_verify_divider"
+                    style="@style/verify_divider_vertical"
+                    android:layout_toLeftOf="@+id/tv_tb_obtain_verifycode"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_tb_commit"
+            style="@style/bottom_tv_btn"
+            android:layout_below="@+id/tb_verify_line"
+            android:text="@string/commit"
+            />
+
+        <!--协议   栏-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tb_commit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tip_has_read_and_agree"
+                android:textColor="@color/hint_color"
+                />
+
+            <LinearLayout
+                android:id="@+id/tb_yft_tiedcard_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/protocol_yft_realname_tiedcard"
+                    android:textColor="@color/hint_color"
+                    />
+
+                <View
+                    style="@style/nomargin_divide_view"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</com.wenjing.yinfutong.widget.MyScrollView>

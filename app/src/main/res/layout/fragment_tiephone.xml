@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/frame_phone_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_modify_height"
+        android:layout_marginTop="@dimen/_40dp"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:background="@color/content_bg"
+        >
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/frame_stroke_bg"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size_13"
+            app:met_baseColor="@color/grey_999"
+            app:met_clearButton="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelTextSize="@dimen/text_size_10"
+            app:met_hideUnderline="true"
+            app:met_primaryColor="@color/grey_999"
+            android:layout_margin="@dimen/_2dp"
+            android:hint="@string/phone_hint"
+            android:inputType="number"
+            android:maxLength="11"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phone_verifycode_line"
+        android:layout_below="@+id/frame_phone_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_modify_height"
+        android:layout_marginTop="@dimen/_20dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/frame_verifycode_line"
+            android:layout_toLeftOf="@+id/tv_obtain_verifycode"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:background="@color/content_bg"
+            >
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_verifycode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/frame_stroke_bg"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_13"
+                app:met_baseColor="@color/grey_999"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextSize="@dimen/text_size_10"
+                app:met_hideUnderline="true"
+                app:met_primaryColor="@color/grey_999"
+                android:layout_margin="@dimen/_2dp"
+                android:hint="@string/phone_verifycode_hint"
+                android:inputType="number"
+                android:maxLength="11"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_obtain_verifycode"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_5dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:background="@drawable/obtainverifycode_selector"
+            android:gravity="center"
+            android:text="@string/obtain_verifycode"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+
+            />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_phone_commit"
+        android:layout_below="@+id/phone_verifycode_line"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/_40dp"
+        android:layout_marginRight="@dimen/_40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/blue_btn_selector"
+        android:gravity="center"
+        android:text="@string/commit"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+</RelativeLayout>

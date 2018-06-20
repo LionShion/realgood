@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/title_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_marginRight="@dimen/_15dp"
+        android:orientation="vertical"
+        android:background="@color/content_bg"
+        >
+
+       <ImageView
+           android:layout_marginTop="44dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@mipmap/wait"
+           android:layout_gravity="center_horizontal"
+
+           />
+
+        <TextView
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/please_wait"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/grey_999"
+            />
+
+        <View
+            android:layout_marginTop="22dp"
+            style="@style/divide_line"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            />
+        <TextView
+            android:id="@+id/tv_cancelqueue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="34dp"
+            android:paddingBottom="34dp"
+            android:text="@string/cancel_queue"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="#FF6673"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

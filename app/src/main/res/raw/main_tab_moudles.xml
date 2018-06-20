@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+    <Module
+        class="com.wenjing.yinfutong.function.home.HomeFragment"
+        icon="tab_home_selector"
+        lable="@string/home"
+        type="moudle"/>
+    <Module
+        class="com.wenjing.yinfutong.function.mine.MineFragment"
+        icon="tab_mine_selector"
+        lable="@string/mine"
+        type="moudle"/>
+
+</Configuration>

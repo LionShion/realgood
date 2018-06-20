@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    >
+
+    <LinearLayout
+        android:id="@+id/page_no_bankcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo_empty"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/_15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tip_no_tiedbankcard"
+            android:textColor="@color/grey_999"
+            android:textSize="@dimen/text_size_12"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/tv_add_bankcard"
+            android:layout_below="@+id/email_verifycode_line"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/green_btn_pressed"
+            android:gravity="center"
+            android:text="@string/add_bank_card"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/page_bankcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20dp"
+        android:paddingLeft="@dimen/_20dp"
+        android:paddingRight="@dimen/_20dp"
+        android:orientation="vertical"
+        >
+
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:id="@+id/recycler_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <RelativeLayout
+            android:id="@+id/banklist_add"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:background="@mipmap/bg_add_bankcard"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/page_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/load_error"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

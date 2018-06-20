@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    >
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/title_margin"
+        android:id="@+id/frame_emailaddress_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/content_bg"
+        >
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_emailaddress"
+            android:hint="@string/email_hint"
+            style="@style/et_email_style"
+            />
+        <View
+            android:layout_below="@+id/et_emailaddress"
+            style="@style/nomargin_divide_view"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/email_verifycode_line"
+        android:layout_below="@+id/frame_emailaddress_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@color/content_bg"
+        >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_email_verifycode"
+            android:layout_toLeftOf="@+id/te_verify_divider"
+            android:hint="@string/email_verifycode_hint"
+            android:layout_marginRight="@dimen/_5dp"
+            style="@style/et_verifycode_style"
+            />
+
+        <TextView
+            android:id="@+id/tv_email_obtain_verifycode"
+            style="@style/verify_tv_obtaincode"
+            android:layout_alignBaseline="@+id/et_email_verifycode"
+            android:layout_alignBottom="@+id/et_email_verifycode"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp" />
+
+            <View
+                android:id="@+id/te_verify_divider"
+                android:layout_toLeftOf="@+id/tv_email_obtain_verifycode"
+                style="@style/verify_divider_vertical"
+                />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_email_commit"
+        android:layout_below="@+id/email_verifycode_line"
+        android:text="@string/commit"
+        style="@style/bottom_tv_btn"
+        />
+
+</RelativeLayout>

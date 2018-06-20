@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@color/white">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageView"
+        android:layout_width="500dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:background="@color/green_00bc9c"
+        />
+
+    <TextView
+        android:id="@+id/right_titlebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00BD9D"
+        android:textSize="@dimen/text_size_15"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:layout_below="@id/imageView"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@color/green_fof7f6"
+        android:gravity="center"
+        android:text="@string/aleady_no_data"
+        android:textColor="@color/grey_999"
+        android:textSize="@dimen/text_size_12"
+        android:visibility="visible"
+        />
+</RelativeLayout>

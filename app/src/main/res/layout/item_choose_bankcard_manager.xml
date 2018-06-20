@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_bankcard_manager"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:background="@drawable/selector_bankcard"
+        android:paddingLeft="@dimen/_15dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_bank_icon"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_total_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5dp"
+            android:layout_toRightOf="@id/iv_bank_icon"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/_5dp"
+            android:paddingTop="@dimen/_5dp">
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="农业银行"
+                android:textColor="@color/black_444"
+                android:textSize="@dimen/text_size_15"/>
+
+            <TextView
+                android:id="@+id/tv_bank_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:text="(0000)"
+                android:textColor="@color/black_444"
+                android:textSize="@dimen/text_size_15"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/divide_view"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:background="@color/grey_ddd"/>
+
+</LinearLayout>

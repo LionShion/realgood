@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wenjing.yinfutong.widget.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                           xmlns:app="http://schemas.android.com/apk/res-auto"
+                                           xmlns:fresco="http://schemas.android.com/tools"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/login"
+            fresco:actualImageScaleType="fitXY"
+            />
+
+
+        <!--国家区域    栏-->
+        <RelativeLayout
+            android:id="@+id/l_region_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_line_height"
+            android:layout_below="@+id/icon_login"
+            android:layout_marginTop="@dimen/_50dp"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:text="@string/country_region"
+                android:textSize="@dimen/text_size_16"
+                />
+
+            <ImageView
+                android:id="@+id/arrow_l_region"
+                style="@style/arrow_right_style"
+                />
+
+            <TextView
+                android:id="@+id/tv_l_regioncode"
+                style="@style/region_txt_style"
+                android:layout_toLeftOf="@+id/arrow_l_region"
+                />
+
+            <View
+                android:id="@+id/l_region_divider"
+                style="@style/region_divider_vertical"
+                android:layout_toLeftOf="@+id/tv_l_regioncode"
+                />
+
+            <TextView
+                android:id="@+id/tv_l_regionname"
+                style="@style/region_txt_style"
+                android:layout_toLeftOf="@+id/l_region_divider"
+                />
+
+
+            <View
+                style="@style/nomargin_divide_view"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+        <!--用户栏-->
+        <RelativeLayout
+            android:id="@+id/phone_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_region_line"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_10dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_account"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:src="@mipmap/icon_phone"
+                />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_phone"
+                style="@style/et_phone_style"
+                android:layout_toRightOf="@+id/iv_account"
+                android:focusable="true"
+                android:hint="@string/phone_hint"
+                />
+
+            <View
+                style="@style/divide_line"
+                android:layout_below="@+id/et_phone"
+                />
+
+        </RelativeLayout>
+
+        <!--密码栏-->
+        <RelativeLayout
+            android:id="@+id/password_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone_line"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_10dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_psd"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:src="@mipmap/icon_password"
+                />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_password"
+                style="@style/et_login_psd"
+                android:layout_toRightOf="@+id/iv_psd"
+                android:hint="@string/psd_hint"
+                />
+
+            <View
+                style="@style/divide_line"
+                android:layout_below="@+id/et_password"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_login"
+            style="@style/bottom_tv_btn"
+            android:layout_below="@+id/password_line"
+            android:text="@string/login"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_30dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:padding="@dimen/_5dp"
+                android:text="@string/tip_forget_psd"
+                android:textColor="@color/grey_999"
+                android:textSize="@dimen/text_size_13"
+                />
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_30dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:padding="@dimen/_5dp"
+                android:text="@string/user_register"
+                android:textColor="@color/grey_999"
+                android:textSize="@dimen/text_size_13"
+                />
+
+            <TextView
+                android:id="@+id/tv_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_30dp"
+                android:text="@string/go_into_experience"
+                android:textColor="@color/goto_exper_text"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</com.wenjing.yinfutong.widget.MyScrollView>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white_fafafa"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48dp"
+        android:layout_gravity="center"
+        android:background="@color/white_fafafa"
+        android:gravity="center"
+        android:text="@string/choose_trade_type"
+        android:textColor="@color/black_333"
+        android:textSize="@dimen/text_size_15"/>
+
+    <View
+        style="@style/divide_view"
+      />
+
+    <RadioGroup
+        android:id="@+id/rg_income_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@color/white_fafafa"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_income_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/personal_bills_screen_radio"
+            android:button="@color/transparent"
+            android:checked="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/all"
+            android:textColor="@color/color_radiobutton"
+            android:textSize="@dimen/text_size_15"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_income"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/personal_bills_screen_radio"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/income"
+            android:textColor="@color/color_radiobutton"
+            android:textSize="@dimen/text_size_15"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_out"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/personal_bills_screen_radio"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/out"
+            android:textColor="@color/color_radiobutton"
+            android:textSize="@dimen/text_size_15"
+            />
+    </RadioGroup>
+
+    <View
+        style="@style/divide_view"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48dp"
+        android:background="@color/white_fafafa"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_type_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/personal_bills_screen_radio"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/all"
+            android:textColor="@color/color_radiobutton"
+            android:textSize="@dimen/text_size_15"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_personal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/personal_bills_screen_radio"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/personal"
+            android:textColor="@color/color_radiobutton"
+            android:textSize="@dimen/text_size_15"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_merchant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/personal_bills_screen_radio"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/merchant"
+            android:textColor="@color/color_radiobutton"
+            android:textSize="@dimen/text_size_15"
+            />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@drawable/btn_write_selector"
+        android:gravity="center"
+        android:text="@string/finish"
+        android:textColor="@color/black_333"
+        android:textSize="@dimen/text_size_18"
+        />
+</LinearLayout>

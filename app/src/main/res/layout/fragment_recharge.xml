@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/all_bg">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/title_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_marginRight="@dimen/_15dp"
+        android:orientation="vertical"
+        android:background="@color/content_bg"
+        >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="xxx"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/text_size_17"/>
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_13dp"
+            android:text="xxx"
+            android:textColor="@color/grey_999"
+            android:textSize="@dimen/text_size_15"/>
+
+        <View
+            style="@style/divide_view_style"
+            android:layout_marginTop="@dimen/_30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30dp"
+            android:text="@string/recharge_money"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/text_size_15"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/money_symbol"
+                android:textColor="@color/black_333"
+                android:textSize="@dimen/_30dp"
+              />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_money"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:hint="@string/pay_money_hint"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp"
+                app:met_baseColor="@color/grey_999"
+                app:met_clearButton="false"
+                app:met_floatingLabel="none"
+                app:met_floatingLabelTextSize="15sp"
+                app:met_hideUnderline="true"
+                app:met_primaryColor="@color/grey_999"
+                android:focusable="true"
+                />
+
+
+        </LinearLayout>
+
+
+        <View
+            style="@style/divide_view_style"
+            android:layout_marginTop="@dimen/_20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_confirm_payment"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_50dp"
+            android:background="@drawable/btn_background_grey"
+            android:gravity="center"
+            android:text="@string/confirm_payment"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

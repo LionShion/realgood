@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/green_00bc9c"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_marginRight="@dimen/_15dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/write_background_normal"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:text="@string/input_gathering_money"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/text_size_15"
+            />
+
+        <View
+            style="@style/divide_line"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_30dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/money_symbol"
+                android:textColor="@color/black_333"
+                android:textSize="@dimen/_30dp"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_money"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:hint="@string/input_gathering_money"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_15"
+                app:met_baseColor="@color/black_333"
+                app:met_clearButton="false"
+                app:met_floatingLabel="none"
+                app:met_hideUnderline="true"
+                app:met_primaryColor="@color/black_333"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_marginRight="@dimen/_15dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@drawable/write_background_normal"
+        >
+
+        <TextView
+            android:id="@+id/gathering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:text="@string/please_choose_gathering_way"/>
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gathering"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/_30dp"
+            android:layout_marginTop="@dimen/_25dp"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawablePadding="7dp"
+                android:drawableTop="@mipmap/logo_alipay"
+                android:gravity="center_horizontal"
+                android:text="@string/alipay"
+                android:textColor="@color/black_333"
+                android:textSize="@dimen/text_size_12"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_wepay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_50dp"
+                android:button="@null"
+                android:drawablePadding="7dp"
+                android:drawableTop="@mipmap/logo_wepay"
+                android:gravity="center_horizontal"
+                android:text="@string/wechat"
+                android:textColor="@color/black_333"
+                android:textSize="@dimen/text_size_12"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_ourpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_50dp"
+                android:button="@null"
+                android:drawablePadding="7dp"
+                android:drawableTop="@mipmap/logo_ourpay"
+                android:gravity="center_horizontal"
+                android:text="@string/our_pay"
+                android:textColor="@color/black_333"
+                android:textSize="@dimen/text_size_12"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+
+
+</LinearLayout>

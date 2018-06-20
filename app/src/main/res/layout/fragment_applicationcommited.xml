@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="@color/all_bg"
+    >
+
+    <!--application_commited    ac-->
+    <RelativeLayout
+        android:layout_marginTop="@dimen/title_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/content_bg"
+        android:paddingTop="@dimen/_50dp"
+        >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/ac_ic_wait"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_centerHorizontal="true"
+            fresco:placeholderImage="@mipmap/wait"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:failureImage="@mipmap/wait"
+            fresco:backgroundImage="@mipmap/wait"
+        />
+
+        <TextView
+            android:id="@+id/tv_wait"
+            android:layout_below="@+id/ac_ic_wait"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/waiting_process"
+            android:textColor="@color/grey_999"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_size_15"
+            />
+        <TextView
+            android:layout_below="@+id/tv_wait"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tip_commited"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/text_size_15"
+            />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    >
+
+    <!--application_commited    ac-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@color/white"
+        android:paddingTop="@dimen/_50dp"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_succ"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_centerHorizontal="true"
+            fresco:backgroundImage="@mipmap/succ"
+            fresco:failureImage="@mipmap/succ"
+            fresco:placeholderImage="@mipmap/succ"
+            fresco:placeholderImageScaleType="fitCenter"
+            />
+
+        <TextView
+            android:id="@+id/tv_pay_succ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_succ"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20dp"
+            android:text="@string/pay_succ"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/text_size_15"
+            />
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_pay_succ"
+            android:layout_marginBottom="@dimen/_40dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/green_btn_selector"
+            android:gravity="center"
+            android:text="@string/finish"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

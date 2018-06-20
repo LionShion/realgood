@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/green_00bc9c">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="410dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_25dp"
+            android:text="@string/scan_pays_me"
+            android:textColor="@color/blck_333"
+            android:textSize="@dimen/text_size_17"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/money_symbol"
+                android:textColor="@color/black_333"
+                android:textSize="@dimen/text_size_18"/>
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="@color/black_333"
+                android:textSize="@dimen/text_size_18"/>
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/divide_view_style"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_20dp"
+            />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_two_code"
+            android:layout_width="225dp"
+            android:layout_height="225dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20dp"/>
+
+        <TextView
+            android:id="@+id/tv_save_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/save_image"
+            android:textColor="@color/blue_15a1f9"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_collection_record"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:background="@drawable/btn_write_selector"
+            android:paddingLeft="@dimen/_15dp"
+            android:paddingRight="@dimen/_15dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/collection_record"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_toRightOf="@id/image"
+                android:text="@string/collection_record"
+                android:textColor="@color/black_333"
+                android:textSize="@dimen/text_size_16"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_arrows_right"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    >
+    <!--country_or_region   cor-->
+    <TextView
+        android:id="@+id/tip_region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_select_your_country_or_region"
+        android:paddingLeft="@dimen/_20dp"
+        android:paddingTop="@dimen/_20dp"
+        android:paddingBottom="@dimen/_20dp"
+        />
+
+    <com.wenjing.yinfutong.view.LoadRecyclerView
+        android:id="@+id/recycler_region"
+        android:layout_below="@+id/tip_region"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/content_bg"
+        />
+
+
+</RelativeLayout>

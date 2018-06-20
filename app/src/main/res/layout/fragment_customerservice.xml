@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    >
+
+    <!-- customer_service cs-->
+    <RelativeLayout
+        android:id="@+id/cs_upper"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/content_bg"
+        android:paddingLeft="@dimen/_15dp"
+        android:paddingRight="@dimen/_15dp"
+        >
+
+        <ImageView
+            android:id="@+id/ic_contact_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo_customer_contact"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/ic_contact_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_15dp"
+            android:layout_centerVertical="true"
+            >
+            <TextView
+                android:id="@+id/tv_hotline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/customer_hotline"
+                android:textSize="24sp"
+                android:textColor="@color/black_333"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tip_customer_hotline"
+                android:textSize="@dimen/text_size_12"
+                android:textColor="@color/grey_999"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+           style="@style/arrow_right_style"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tip_common_problem"
+        android:layout_below="@+id/cs_upper"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="@string/common_problem"
+        android:textColor="@color/grey_999"
+        android:textSize="@dimen/text_size_13"
+        android:paddingLeft="@dimen/_16dp"
+        android:layout_marginTop="10dp"
+        android:background="#F7F7F7"
+        android:gravity="center_vertical"
+        />
+
+    <com.wenjing.yinfutong.view.LoadRecyclerView
+        android:id="@+id/common_pb_recycler"
+        android:layout_below="@+id/tip_common_problem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/content_bg"
+        />
+</RelativeLayout>

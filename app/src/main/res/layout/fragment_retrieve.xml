@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wenjing.yinfutong.widget.MyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tip_retrieve_psd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verify_identity"
+            android:textSize="@dimen/text_size_20"
+            android:textColor="@color/black"
+            android:paddingTop="@dimen/_20dp"
+            android:paddingBottom="@dimen/_20dp"
+            android:paddingLeft="@dimen/_10dp"
+            />
+
+        <!--retrieve_psd    rp-->
+        <!--国家区域    栏-->
+        <RelativeLayout
+            android:id="@+id/rp_region_line"
+            android:layout_below="@+id/tip_retrieve_psd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_line_height"
+            android:background="@color/content_bg"
+            >
+            <RelativeLayout
+                android:id="@+id/rp_hor_line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_10dp"
+                android:paddingRight="@dimen/_10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/country_region"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/arrow_rp_region"
+                    style="@style/arrow_right_style"
+                    />
+                <TextView
+                    android:id="@+id/tv_rp_regioncode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/arrow_rp_region"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_centerVertical="true"
+                    />
+
+                <View
+                    android:id="@+id/rp_region_divider"
+                    android:layout_toLeftOf="@+id/tv_rp_regioncode"
+                    android:layout_marginRight="@dimen/_10dp"
+                    style="@style/region_divider_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_rp_regionname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/rp_region_divider"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+            <View
+                style="@style/nomargin_divide_view"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frame_rp_line"
+            android:layout_below="@+id/rp_region_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/content_bg"
+            >
+
+            <!--phone or email     poe-->
+            <RelativeLayout
+                android:id="@+id/rp_poe_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_rp_poe"
+                    android:hint="@string/phone_hint"
+                    style="@style/et_phone_style"
+                    />
+                <View
+                    android:layout_below="@+id/et_rp_poe"
+                    style="@style/nomargin_divide_view"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rp_verifycode_line"
+                android:layout_below="@+id/rp_poe_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_rp_verifycode"
+                    android:layout_toLeftOf="@+id/rp_verify_divider"
+                    android:hint="@string/phone_verifycode_hint"
+                    style="@style/et_verifycode_style"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_rp_obtain_verifycode"
+                    style="@style/verify_tv_obtaincode"
+                    />
+
+                <View
+                    android:id="@+id/rp_verify_divider"
+                    android:layout_toLeftOf="@+id/tv_rp_obtain_verifycode"
+                    style="@style/verify_divider_vertical"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_rp_first_step"
+            android:layout_below="@+id/frame_rp_line"
+            android:text="@string/next_step"
+            style="@style/bottom_tv_btn"
+            />
+    </RelativeLayout>
+</com.wenjing.yinfutong.widget.MyScrollView>

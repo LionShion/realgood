@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/title_margin"
+        android:id="@+id/safety_operate_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/content_bg"
+        android:orientation="vertical"
+        >
+
+        <!--重置 登录密码  栏-->
+        <RelativeLayout
+            android:id="@+id/reset_login_psd_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_line_height"
+            >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/reset_login_psd"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="@dimen/_10dp"
+               />
+
+           <ImageView
+               style="@style/arrow_right_style"
+               android:layout_marginRight="@dimen/_10dp"
+               />
+            <View
+                android:layout_alignParentBottom="true"
+                style="@style/nomargin_divide_view"
+                />
+
+        </RelativeLayout>
+
+        <!--重置   支付密码      栏-->
+        <RelativeLayout
+            android:id="@+id/reset_payment_psd_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_line_height"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_payment_psd"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                style="@style/arrow_right_style"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_below="@+id/safety_operate_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/content_line_height"
+        android:text="@string/exit"
+        android:textColor="@color/obtain_verify_txtcolor"
+        android:layout_marginTop="@dimen/_40dp"
+        android:background="@color/content_bg"
+        />
+</RelativeLayout>

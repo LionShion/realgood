@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/loading_progressbar"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10.0dip">
+
+
+    <ProgressBar
+        style="@style/loading_dialog"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/dialog_loading_anim_progress" />
+    <!-- <com.jiayinlending.widget.MaterialProgressBar
+         android:id="@+id/waiting_pb"
+         android:layout_width="45dp"
+         android:layout_height="45dp"
+         app:bar_rimshown="true"
+         app:bar_width="5dp"
+         app:rim_width="6dp" />
+     <com.jiayinlending.widget.dialog.ProgressWheel
+         android:id="@+id/waiting_pb"
+         android:layout_width="45dp"
+         android:layout_height="45dp"
+         app:bar_rimshown="true"
+         app:bar_width="5dp"
+         app:rim_width="6dp"/>-->
+
+    <TextView
+        android:id="@+id/waiting_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:text="加载中"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

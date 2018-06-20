@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_bankcard_height"
+        >
+
+        <RelativeLayout
+            android:id="@+id/item_bankcard_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bankcard_bg"
+            android:padding="@dimen/_10dp"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/item_bankcard_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/logo_bankcard"
+                    android:layout_width="@dimen/_40dp"
+                    android:layout_height="@dimen/_40dp"
+                    android:layout_centerVertical="true"
+                    fresco:placeholderImage="@mipmap/account"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:failureImage="@mipmap/account"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:layout_toRightOf="@+id/logo_bankcard"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/name_bankcard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="银行卡"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_20"
+                        />
+
+                    <TextView
+                        android:id="@+id/type_bankcard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:text="信用卡/借记卡/储蓄卡"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_14"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/num_bankcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_bankcard_title"
+                android:layout_marginTop="@dimen/_20dp"
+                android:text="6221 4152 1469 1458 145"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_unbind"-->
+    <!--android:layout_alignTop="@+id/item_bankcard_left"-->
+    <!--android:layout_alignBottom="@+id/item_bankcard_left"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:background="@drawable/unbind_bg"-->
+    <!--android:text="@string/unbind"-->
+    <!--android:textColor="#cb5260"-->
+    <!--android:textSize="@dimen/text_size_20"-->
+    <!--android:layout_marginLeft="@dimen/_10dp"-->
+    <!--/>-->
+
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="white">#ffffff</color>
+    <string name="white_str">#ffffff</string>
+    <color name="button_dark">#B3B3B3</color>
+    <color name="progressbar_bag">#D8D8D8</color>
+    <color name="black">#000000</color>
+    <color name="black_dark">#af000000</color>
+    <color name="black_light">#3f000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey">#cbcbcb</color>
+
+    <string name="tx_black_str">#4d4d4d</string>
+    <string name="dark_red_n">#DA3417</string>
+    <string name="button_red">#DA3417</string>
+
+    <color name="window_background">#f2f2f2</color>
+    <color name="toast_bg">#5f000000</color>
+    <color name="divider_color">#DADADA</color>
+
+
+    <color name="bottom_tab_bg">#FCFCFC</color>
+    <color name="bottom_tab_split_color">#D6D6D6</color>
+    <color name="tab_text_gray">#808080</color>
+    <color name="editText_hint_color">#aaaaaa</color>
+
+
+    //dialog
+    <color name="ui_dialog_list_text">#5E5E5E</color>
+    <color name="ui_dialog_divider">@color/divider_color</color>
+    <color name="light_gray">#1a000000</color>
+    <color name="lightest_gray">#0a000000</color>
+    <color name="bg_touch">@color/lightest_gray</color>
+
+
+    <color name="background">#F8F8F8</color>
+    <color name="tab_bg_line">#FFD2D2D2</color>
+
+    <color name="list_divider_color">#DADADA</color>
+    <color name="pink">#FFF</color>
+    <color name="text_white">#FFF</color>
+    <!--圆形进度条-->
+    <color name="red">#c72828</color>
+    <color name="blue_color">#478fe9</color>
+    <color name="sold_out_color">#cbcbcb</color>
+    <color name="wechat_text_color">#EC5948</color>
+    <color name="six_edit_text_bkg">#EEEEEE</color>
+    <color name="text_color_dark">#888888</color>
+    <color name="account_bkg_color">#DDDDDD</color>
+    <color name="text_color_dark_little">#D8D8D8</color>
+    <color name="background_color_E6">#E6E6E6</color>
+
+    <color name="enable_color_90">#909090</color>
+    <string name="enable_color_90_str">#909090</string>
+    <color name="gray">#BFC4C8</color>
+    <color name="not_begin_transplant">#80000000</color>
+
+    <color name="bkg_dark">#F5F5F5</color>
+
+    <!--红包-->
+    <color name="red_bottom">#EFA39A</color>
+    <color name="gray_white">#CBCBCB</color>
+
+
+    <color name="text_color_6d">#6d6d6d</color>
+    <color name="text_color_cb">#cbcbcb</color>
+    <color name="text_color_64">#646464</color>
+
+    <color name="text_invest_color1">#6d6d6d</color>
+    <color name="text_invest_color2">#cbcbcb</color>
+
+    <color name="line_color">#D8D7D7</color>
+
+    <color name="global_common_backage">@color/green_00bc9c</color>
+    <color name="gray_c">#cccccc</color>
+    <color name="line_e6">#E6E6E6</color>
+
+    <color name="titleColorSelected">#005DAD</color>
+    <color name="hint_color">#d6d6d6</color>
+
+    <color name="bg">#F0F0F0</color>
+
+    <color name="blck_333">#333333</color>
+    <color name="toolbar_background">@color/white</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="key_normal_color">#ffffff</color>
+    <color name="key_selected_color">#b8bcc0</color>
+    <color name="opkey_selected_color">#cbcfd5</color>
+    <color name="keyboard_bg_color">#bdbdbd</color>
+    <color name="yellow_2b851">#E2B851</color>
+
+    <color name="grey_c">#cccccc</color>
+    <color name="grey_ddd">#DDDDDD</color>
+    <color name="black_333">#333333</color>
+    <color name="black_444">#444444</color>
+    <color name="grey_666">#666666</color>
+    <color name="grey_777">#777777</color>
+    <color name="grey_888">#888888</color>
+    <color name="grey_999">#999999</color>
+    <color name="grey_6767">#676767</color>
+    <color name="grey_f6f6f6">#F6F6F6</color>
+    <color name="grey_btn_bg">#676767</color>
+    <color name="blue_btn_bg">#169ad4</color>
+
+
+    <color name="all_bg">#F0F7F6</color>
+    <color name="mine_header_bg">#989898</color>
+    <color name="content_bg">@color/white</color>
+    <color name="recharge_bg">#989898</color>
+    <color name="field_color">#333333</color>
+    <color name="value_color">#999999</color>
+    <color name="mine_service_color">#564F5F</color>
+    <color name="goto_exper_text">#30c4aa</color>
+    <color name="green_00bc9c">#00BC9C</color>
+    <color name="green_fof7f6">#F0F7F6</color>
+    <color name="blue_15a1f9">#15A1F9</color>
+
+    <color name="frame_stroke_bg">#000000</color>
+    <color name="obtain_verifycode_normal_bg">#fdfdfe</color>
+    <color name="obtain_verifycode_pressed_bg">#fdfdfe</color>
+
+    <color name="supper_bg">#00bb9b</color>
+    <color name="recent_onetrade_bg">#f0f0f0</color>
+    
+    <color name="btn_bg_inactive">#CCCCCC</color>
+    <color name="btn_bg_active">#00BD9D</color>
+    <color name="item_selected_txtcolor">#48cdb5</color>
+    <color name="item_normal_txtcolor">@color/black_444</color>
+
+
+    <color name="mine_upper_bg">#00bc9c</color>
+    <color name="obtain_verify_txtcolor">#00BC9C</color>
+    <color name="white_fafafa">#FAFAFA</color>
+    <color name="unbind_bgcolor">#fdfdfe</color>
+    <color name="radiobtn_check_pre">#eff6f5</color>
+    <color name="radiobtn_check_post">#899895</color>
+    <color name="red_ff2020">#FF2020</color>
+    <color name="btn_unbind_txtcolor">#ff6673</color>
+    <color name="grey_bbbbbb">#BBBBBB</color>
+    <color name="orange_ff9933">#FF9933</color>
+    <color name="red_f57362">#F57362</color>
+
+    <color name="number_start">#fff</color>
+    <color name="number_end">#d1d5db</color>
+    <color name="frame_divider_color">#DDDDDD</color>
+    <color name="yellow_fcfaeb">#FCFAEB</color>
+    <color name="balance_color">#4D4D4D</color>
+    <color name="ms_balance_color">#333333</color>
+    <color name="re_enter_color">#00BC9C</color>
+    <color name="right_titlebtn_color">#00BD9D</color>
+    <color name="grey_8a996">#8A9996</color>
+
+
+</resources>

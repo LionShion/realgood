@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/srl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+        </android.support.v7.widget.RecyclerView>
+
+        <com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green_fof7f6"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/home_green_background">
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/_10dp"
+                        android:paddingTop="@dimen/_10dp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/ECoder_scaning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@mipmap/icon_home_richscan"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/_5dp"
+                                android:text="@string/richScan"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_15"
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_payment_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/icon_home_payment_code"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/_5dp"
+                                android:text="@string/gathering"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_15"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="40dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@mipmap/icon_home_balance"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/_5dp"
+                                android:text="@string/balance"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_15"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rl_background"
+                        android:layout_marginLeft="@dimen/_20dp"
+                        android:layout_marginRight="@dimen/_20dp"
+                        android:background="@mipmap/home_gridview_backgound"
+                       >
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingBottom="@dimen/_10dp"
+                            android:paddingTop="@dimen/_20dp"
+                            >
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_48dp"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/_15dp"
+                    android:paddingRight="@dimen/_15dp">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_5dp"
+                        android:src="@mipmap/icon_home_announcement"/>
+
+
+                    <com.wenjing.yinfutong.view.MarqueeView
+                        android:id="@+id/marquee_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40dp"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/image"
+                        android:background="@color/white"
+                        android:fillViewport="true"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                    </com.wenjing.yinfutong.view.MarqueeView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_5dp"
+                        android:src="@mipmap/ic_arrows_right"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_15dp"
+                    android:text="@string/hot_recommend"
+                    android:textColor="@color/black_333"
+                    android:textSize="@dimen/text_size_16"/>
+
+
+                <View style="@style/divide_view_style"/>
+
+            </LinearLayout>
+        </com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader>
+
+    </FrameLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

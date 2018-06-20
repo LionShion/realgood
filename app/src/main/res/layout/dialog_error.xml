@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/tip_eror_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_login_error"
+        android:paddingTop="@dimen/_50dp"
+        android:paddingBottom="@dimen/_50dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/top_corner"
+        />
+
+    <View
+        android:id="@+id/hor_divider"
+        android:layout_below="@+id/tip_eror_login"
+        style="@style/nomargin_divide_view"
+
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/hor_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/bottom_corner"
+        >
+        <Button
+            android:id="@+id/btn_error_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textColor="@color/gray"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/_1dp"
+            android:paddingTop="@dimen/_20dp"
+            android:paddingBottom="@dimen/_20dp"
+            />
+        <View
+            android:layout_width="@dimen/_1dp"
+            android:layout_height="match_parent"
+            android:background="#D6D6D6"
+            />
+        <Button
+            android:id="@+id/btn_error_retry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/retry"
+            android:textColor="@color/btn_bg_active"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/_1dp"
+            android:layout_marginLeft="@dimen/_1dp"
+            android:paddingTop="@dimen/_20dp"
+            android:paddingBottom="@dimen/_20dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

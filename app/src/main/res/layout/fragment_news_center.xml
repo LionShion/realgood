@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/green_fof7f6"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_platform_announcement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@drawable/btn_write_selector"
+        android:padding="@dimen/_15dp">
+
+        <com.wenjing.yinfutong.view.DotImageView
+            android:id="@+id/iv_system_notice"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_system_notice"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_toRightOf="@id/iv_system_notice"
+            android:text="@string/platform_announcement"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/_15dp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10dp"
+            android:src="@mipmap/ic_arrows_right"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_trade_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@drawable/btn_write_selector"
+        android:padding="@dimen/_15dp">
+
+        <com.wenjing.yinfutong.view.DotImageView
+            android:id="@+id/iv_my_message"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_trade_info"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_toRightOf="@id/iv_my_message"
+            android:text="@string/trade_information"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/_15dp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10dp"
+            android:src="@mipmap/ic_arrows_right"/>
+    </RelativeLayout>
+
+</LinearLayout>

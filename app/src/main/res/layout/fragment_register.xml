@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/frame_r_line"
+        android:layout_marginTop="@dimen/_30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_10dp"
+        android:paddingRight="@dimen/_10dp"
+        >
+        <!--国家区域    栏-->
+        <RelativeLayout
+            android:id="@+id/r_region_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_line_height"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country_region"
+                android:textSize="@dimen/text_size_16"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/arrow_countryregion"
+                style="@style/arrow_right_style"
+                />
+            <TextView
+                android:id="@+id/tv_r_regioncode"
+                android:layout_toLeftOf="@+id/arrow_countryregion"
+                style="@style/region_txt_style"
+                />
+
+            <View
+                android:id="@+id/r_region_divider"
+                android:layout_toLeftOf="@+id/tv_r_regioncode"
+                android:layout_marginRight="@dimen/_10dp"
+                style="@style/region_divider_vertical"
+                />
+
+            <TextView
+                android:id="@+id/tv_r_regionname"
+                android:layout_toLeftOf="@+id/r_region_divider"
+                style="@style/region_txt_style"
+                />
+
+            <View
+                style="@style/nomargin_divide_view"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+
+        <!--手机  栏-->
+        <RelativeLayout
+            android:id="@+id/r_phone_line"
+            android:layout_below="@+id/r_region_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_line_height"
+            >
+            <TextView
+                android:id="@+id/tip_r_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phonenum"
+                android:textSize="@dimen/text_size_16"
+                android:layout_centerVertical="true"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_r_phone"
+                android:layout_toRightOf="@+id/tip_r_phone"
+                android:hint="@string/phone_hint"
+                style="@style/et_phone_style"
+                />
+
+            <View
+                style="@style/nomargin_divide_view"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+        <!--验证码     栏-->
+        <RelativeLayout
+            android:id="@+id/r_verifycode_line"
+            android:layout_below="@+id/r_phone_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/content_line_height"
+            >
+            <TextView
+                android:id="@+id/tip_r_verifycode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/verifycode"
+                android:textSize="@dimen/text_size_16"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_r_verifycode"
+                android:layout_toRightOf="@+id/tip_r_verifycode"
+                android:layout_toLeftOf="@+id/r_verify_divider"
+                android:hint="@string/verifycode_hint"
+                style="@style/et_verifycode_style"
+                />
+
+            <TextView
+                android:id="@+id/tv_r_obtain_verifycode"
+                style="@style/verify_tv_obtaincode"
+                />
+
+            <View
+                android:id="@+id/r_verify_divider"
+                android:layout_toLeftOf="@+id/tv_r_obtain_verifycode"
+                style="@style/verify_divider_vertical"
+                />
+
+            <View
+                style="@style/nomargin_divide_view"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_r_nextstep"
+        android:layout_below="@+id/frame_r_line"
+        android:text="@string/next_step"
+        style="@style/bottom_tv_btn"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    >
+
+    <!--depositbank    db-->
+    <RadioGroup
+        android:layout_marginTop="@dimen/title_margin"
+        android:id="@+id/rg_db_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_60dp"
+        android:layout_marginRight="@dimen/_60dp"
+        android:weightSum="2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:background="@drawable/radiogroup_shape"
+        >
+        <RadioButton
+            android:id="@+id/rb_not_unioncard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/not_union_pay_card"
+            android:gravity="center"
+            android:background="@drawable/radiobtn_left_selector"
+            android:checked="true"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingBottom="@dimen/_5dp"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_unioncard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/union_pay_card"
+            android:gravity="center"
+            android:background="@drawable/radiobtn_right_selector"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingBottom="@dimen/_5dp"
+            />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_banklist"
+        android:layout_below="@+id/rg_db_selector"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/content_bg"
+        />
+</RelativeLayout>
