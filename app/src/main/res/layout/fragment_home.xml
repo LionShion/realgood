@@ -49,6 +49,7 @@
                         android:paddingTop="@dimen/_10dp"
                         >
 
+
                         <LinearLayout
                             android:id="@+id/ECoder_scaning"
                             android:layout_width="wrap_content"
